@@ -80,7 +80,6 @@ BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge::
 	palace_save 0
 	playse SE_SAVE
 	waitse
-	call BattleFrontier_EventScript_GetCantRecordBattle
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge
 	message BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch
 	waitmessage
@@ -91,7 +90,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge::
 	case MULTI_B_PRESSED, BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge
 
 BattleFrontier_BattlePalaceLobby_EventScript_RecordMatch::
-	call BattleFrontier_EventScript_SaveBattle
+	end
 BattleFrontier_BattlePalaceLobby_EventScript_EndSaveAfterChallenge::
 	return
 
@@ -153,7 +152,6 @@ BattleFrontier_BattlePalaceLobby_EventScript_TryEnterChallenge::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	callnative RemoveFollowingPokemon
-	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier

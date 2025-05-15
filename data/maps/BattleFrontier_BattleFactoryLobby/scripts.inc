@@ -63,7 +63,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_GiveBattlePoints::
 	factory_save 0
 	playse SE_SAVE
 	waitse
-	goto BattleFrontier_BattleFactoryLobby_EventScript_AskRecordBattle
+	msgbox BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch, MSGBOX_DEFAULT
 	end
 
 BattleFrontier_BattleFactoryLobby_EventScript_LostChallenge::
@@ -79,18 +79,10 @@ BattleFrontier_BattleFactoryLobby_EventScript_LostChallenge::
 	waitse
 
 BattleFrontier_BattleFactoryLobby_EventScript_AskRecordBattle::
-	call BattleFrontier_EventScript_GetCantRecordBattle
-	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle
-	message BattleFrontier_BattleFactoryLobby_Text_RecordLastMatch
-	waitmessage
-	multichoicedefault 20, 8, MULTI_YESNO, 1, FALSE
-	switch VAR_RESULT
-	case 1, BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle
-	case 0, BattleFrontier_BattleFactoryLobby_EventScript_RecordBattle
-	case MULTI_B_PRESSED, BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle
+	end
 
 BattleFrontier_BattleFactoryLobby_EventScript_RecordBattle::
-	call BattleFrontier_EventScript_SaveBattle
+	end
 BattleFrontier_BattleFactoryLobby_EventScript_EndRecordBattle::
 	msgbox BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit, MSGBOX_DEFAULT
 	closemessage

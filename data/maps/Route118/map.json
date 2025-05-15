@@ -27,6 +27,16 @@
       "map": "MAP_ROUTE123",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_MIRAGE_POINT",
+      "offset": 0,
+      "direction": "dive"
+    },
+    {
+      "map": "MAP_MIRAGE_POINT",
+      "offset": 14,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -70,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_BIRDKEEPER",
       "x": 64,
       "y": 10,
       "elevation": 3,
@@ -200,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_AROMA",
       "x": 7,
       "y": 12,
       "elevation": 3,
@@ -226,7 +236,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_BIRDKEEPER",
       "x": 56,
       "y": 7,
       "elevation": 3,

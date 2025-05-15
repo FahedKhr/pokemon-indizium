@@ -88,7 +88,6 @@ BattleFrontier_BattleDomeLobby_EventScript_AskRecordBattle::
 	dome_save 0
 	playse SE_SAVE
 	waitse
-	call BattleFrontier_EventScript_GetCantRecordBattle
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleDomeLobby_EventScript_EndChallenge
 	message BattleFrontier_BattleDomeLobby_Text_RecordLastMatch
 	waitmessage
@@ -99,7 +98,7 @@ BattleFrontier_BattleDomeLobby_EventScript_AskRecordBattle::
 	case MULTI_B_PRESSED, BattleFrontier_BattleDomeLobby_EventScript_EndChallenge
 
 BattleFrontier_BattleDomeLobby_EventScript_RecordBattle::
-	call BattleFrontier_EventScript_SaveBattle
+	end
 BattleFrontier_BattleDomeLobby_EventScript_EndChallenge::
 	msgbox BattleFrontier_BattleDomeLobby_Text_HopeToSeeYouAgain, MSGBOX_DEFAULT
 	closemessage
@@ -163,7 +162,6 @@ BattleFrontier_BattleDomeLobby_EventScript_TryEnterChallenge::
 	msgbox BattleFrontier_BattleDomeLobby_Text_SelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	callnative RemoveFollowingPokemon
-	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 	special ChoosePartyForBattleFrontier

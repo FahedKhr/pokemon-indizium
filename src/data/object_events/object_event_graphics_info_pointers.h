@@ -40,6 +40,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SchoolKidM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Maniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HexManiac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RayquazaStill;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Artikuno;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SwimmerM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SwimmerF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BlackBelt;
@@ -118,6 +119,21 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberM
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquaMemberF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MagmaMemberF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Magma_Admin_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Magma_Admin_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aqua_Admin_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aqua_Admin_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Aroma;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ace_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ace_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Birdkeeper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Breeder_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Breeder_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ranger_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ranger_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bugmaniac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ruinmaniac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_President;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sidney;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Phoebe;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Glacia;
@@ -291,6 +307,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MANIAC] =                   &gObjectEventGraphicsInfo_Maniac,
     [OBJ_EVENT_GFX_HEX_MANIAC] =               &gObjectEventGraphicsInfo_HexManiac,
     [OBJ_EVENT_GFX_RAYQUAZA_STILL] =           &gObjectEventGraphicsInfo_RayquazaStill,
+    [OBJ_EVENT_GFX_ARTIKUNO] =                 &gObjectEventGraphicsInfo_Artikuno,
     [OBJ_EVENT_GFX_SWIMMER_M] =                &gObjectEventGraphicsInfo_SwimmerM,
     [OBJ_EVENT_GFX_SWIMMER_F] =                &gObjectEventGraphicsInfo_SwimmerF,
     [OBJ_EVENT_GFX_BLACK_BELT] =               &gObjectEventGraphicsInfo_BlackBelt,
@@ -370,6 +387,21 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AQUA_MEMBER_F] =            &gObjectEventGraphicsInfo_AquaMemberF,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_MagmaMemberM,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_F] =           &gObjectEventGraphicsInfo_MagmaMemberF,
+    [OBJ_EVENT_GFX_MAGMA_ADMIN_F] =            &gObjectEventGraphicsInfo_Magma_Admin_F,
+    [OBJ_EVENT_GFX_MAGMA_ADMIN_M] =            &gObjectEventGraphicsInfo_Magma_Admin_M,
+    [OBJ_EVENT_GFX_AQUA_ADMIN_F] =             &gObjectEventGraphicsInfo_Aqua_Admin_F,
+    [OBJ_EVENT_GFX_AQUA_ADMIN_M] =             &gObjectEventGraphicsInfo_Aqua_Admin_M,
+    [OBJ_EVENT_GFX_AROMA] =                    &gObjectEventGraphicsInfo_Aroma,
+    [OBJ_EVENT_GFX_ACE_M] =                    &gObjectEventGraphicsInfo_Ace_M,
+    [OBJ_EVENT_GFX_ACE_F] =                    &gObjectEventGraphicsInfo_Ace_F,
+    [OBJ_EVENT_GFX_BIRDKEEPER] =               &gObjectEventGraphicsInfo_Birdkeeper,
+    [OBJ_EVENT_GFX_BUGMANIAC] =                &gObjectEventGraphicsInfo_Bugmaniac,
+    [OBJ_EVENT_GFX_RUINMANIAC] =               &gObjectEventGraphicsInfo_Ruinmaniac,
+    [OBJ_EVENT_GFX_BREEDER_M] =                &gObjectEventGraphicsInfo_Breeder_M,
+    [OBJ_EVENT_GFX_BREEDER_F] =                &gObjectEventGraphicsInfo_Breeder_F,
+    [OBJ_EVENT_GFX_RANGER_M] =                 &gObjectEventGraphicsInfo_Ranger_M,
+    [OBJ_EVENT_GFX_RANGER_F] =                 &gObjectEventGraphicsInfo_Ranger_F,
+    [OBJ_EVENT_GFX_PRESIDENT] =                &gObjectEventGraphicsInfo_President,
     [OBJ_EVENT_GFX_SIDNEY] =                   &gObjectEventGraphicsInfo_Sidney,
     [OBJ_EVENT_GFX_PHOEBE] =                   &gObjectEventGraphicsInfo_Phoebe,
     [OBJ_EVENT_GFX_GLACIA] =                   &gObjectEventGraphicsInfo_Glacia,

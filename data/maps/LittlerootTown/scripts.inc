@@ -164,6 +164,7 @@ LittlerootTown_EventScript_GoInsideWithMom::
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	closedoor VAR_0x8004, VAR_0x8005
 	waitdooranim
+	setflag FLAG_REVERSAL_HIDE_GRUNTS
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	return

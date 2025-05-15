@@ -1,0 +1,72 @@
+{
+  "id": "MAP_NEW_MAP1",
+  "name": "NewMap1",
+  "layout": "LAYOUT_NEW_MAP1",
+  "music": "MUS_RG_MT_MOON",
+  "region_map_section": "MAPSEC_RUSTBORO_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 38,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_MAGMA_SEWERS_DEFEATED"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 53,
+      "elevation": 0,
+      "dest_map": "MAP_GATEWAY_TO_RUSTBORO_SEWERS",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_MAGMA_SEWERS_STATE",
+      "var_value": "0",
+      "script": "Sewers_MagmaGuy"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_MAGMA_SEWERS_STATE",
+      "var_value": "0",
+      "script": "Sewers_MagmaGuy"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_MAGMA_SEWERS_STATE",
+      "var_value": "0",
+      "script": "Sewers_MagmaGuy"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

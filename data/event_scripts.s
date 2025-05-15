@@ -1154,3 +1154,45 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/CodaCave/scripts.inc"
+
+	.include "data/maps/MiragePoint/scripts.inc"
+
+	.include "data/maps/EcumeCave/scripts.inc"
+
+	.include "data/maps/Mauville_Inside/scripts.inc"
+
+	.include "data/maps/MountDestina_1/scripts.inc"
+
+	.include "data/maps/MountDestinia_2/scripts.inc"
+
+	.include "data/maps/MountDestinia_Outside/scripts.inc"
+
+	.include "data/maps/MountDestinia_4/scripts.inc"
+
+	.include "data/maps/MountDestinia/scripts.inc"
+
+	.include "data/maps/GatewayToRustboroSewers/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/ReversalGrotto/scripts.inc"
+
+	.include "data/maps/MossdeepSchoolhouse/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/OmegaRuins/scripts.inc"
+
+	.include "data/maps/SandyStorage/scripts.inc"
+
+	.include "data/maps/InfiniteInferno_Floor1/scripts.inc"
+
+	.include "data/maps/InfiniteInferno_Floor2/scripts.inc"
+
+	.include "data/maps/InfiniteInferno_Floor3/scripts.inc"
+
+	.include "data/maps/InfiniteInferno_Floor4/scripts.inc"
+
+	.include "data/maps/Route135/scripts.inc"

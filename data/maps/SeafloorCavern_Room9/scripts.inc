@@ -122,31 +122,12 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	applymovement VAR_0x8004, SeafloorCavern_Room9_Movement_ArchieExit
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_MaxieComeOnPlayer, MSGBOX_DEFAULT
-	setvar VAR_ROUTE128_STATE, 1
-	setvar VAR_SOOTOPOLIS_CITY_STATE, 1
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON
-	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE
-	setflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
-	setflag FLAG_LEGENDARIES_IN_SOOTOPOLIS
-	clearflag FLAG_HIDE_ROUTE_128_ARCHIE
-	clearflag FLAG_HIDE_ROUTE_128_MAXIE
-	setflag FLAG_SYS_WEATHER_CTRL
-	setflag FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN
-	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN
-	setvar VAR_STEVENS_HOUSE_STATE, 2
 	setvar VAR_SEAFLOOR_CAVERN_STATE, 1
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_ARCHIE
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAXIE
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_MAGMA_GRUNTS
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_AQUA_GRUNTS
-	setflag FLAG_HIDE_MAP_NAME_POPUP
-	warp MAP_ROUTE128, 38, 22
-	waitstate
 	releaseall
 	end
 
@@ -275,18 +256,15 @@ SeafloorCavern_Room9_Text_ArchieAMessageFromOutside:
 SeafloorCavern_Room9_Text_ArchieWhatRainingTooHard:
 	.string "ARCHIE: Yes, what is it?\p"
 	.string "Hm…\n"
-	.string "It's raining heavily?\p"
-	.string "Good… That should have happened.\n"
-	.string "That is why we awakened KYOGRE,\l"
-	.string "to realize TEAM AQUA's vision of\l"
-	.string "expanding the sea.\p"
+	.string "Nothing's happening?\p"
+	.string "How is that possible.\n"
+	.string "There should have been some rain,\l"
+	.string "by now.\p"
 	.string "What?!\p"
-	.string "It's raining far harder than we\n"
-	.string "envisioned? You're in danger?\p"
-	.string "That can't be…\n"
-	.string "That's just not possible…\p"
-	.string "Hold your position and monitor\n"
-	.string "the situation!$"
+	.string "So you're saying  we'd need the\n"
+	.string "GREEN ORB at the top of Mt.Destinia?\p"
+	.string "Very well then… We better get it\n"
+	.string "before TEAM MAGMA does.$"
 
 SeafloorCavern_Room9_Text_ArchieWhyDidKyogreDisappear:
 	.string "ARCHIE: There's something wrong…\p"
@@ -300,10 +278,10 @@ SeafloorCavern_Room9_Text_MaxieWhatHaveYouWrought:
 	.string "MAXIE: What have you wrought?\p"
 	.string "ARCHIE… You've finally awoken KYOGRE,\n"
 	.string "haven't you?\p"
-	.string "What will happen to the world if this\n"
-	.string "downpour continues for all eternity?\p"
-	.string "The world's landmass will drown in\n"
-	.string "the deepening sea…$"
+	.string "But do you know you'll also need\n"
+	.string "the GREEN ORB for their power to be?\p"
+	.string "I can assure you I'm getting it before\n"
+	.string "you wimps can!$"
 
 SeafloorCavern_Room9_Text_ArchieDontGetAllHighAndMighty:
 	.string "ARCHIE: W-what?!\n"

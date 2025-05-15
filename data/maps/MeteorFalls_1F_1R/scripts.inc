@@ -41,6 +41,7 @@ MeteorFalls_1F_1R_EventScript_MagmaStealsMeteoriteScene::
 	closemessage
 	applymovement LOCALID_MAGMA_GRUNT_1, MeteorFalls_1F_1R_Movement_MagmaGruntApproachPlayer
 	waitmovement 0
+	trainerbattle_no_intro TRAINER_COURTNEY_METEORFALLS, MeteorFalls_COURTNEY_LOSE
 	msgbox MeteorFalls_1F_1R_Text_HoldItRightThereMagma, MSGBOX_DEFAULT
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
@@ -282,6 +283,9 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
 	.string "BOSS, we should give chase to\n"
 	.string "TEAM MAGMA…$"
+
+MeteorFalls_COURTNEY_LOSE:
+	.string "Ahahahahah... Ouch$"
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
 	.string "ARCHIE: Yes, yes, we must!\n"

@@ -100,7 +100,6 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForOpponent::
 	call_if_eq VAR_RESULT, 4, BattleFrontier_BattlePalaceBattleRoom_EventScript_ReadyFor5thOpponent
 	call_if_eq VAR_RESULT, 5, BattleFrontier_BattlePalaceBattleRoom_EventScript_ReadyFor6thOpponent
 	call_if_eq VAR_RESULT, 6, BattleFrontier_BattlePalaceBattleRoom_EventScript_ReadyFor7thOpponent
-	call BattleFrontier_EventScript_GetCantRecordBattle
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForOpponentNoRecord
 	multichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE
 	switch VAR_RESULT
@@ -128,7 +127,6 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_AskRecordBattle::
 	case MULTI_B_PRESSED, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForOpponent
 
 BattleFrontier_BattlePalaceBattleRoom_EventScript_RecordBattle::
-	call BattleFrontier_EventScript_SaveBattle
 	goto BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForOpponent
 
 BattleFrontier_BattlePalaceBattleRoom_EventScript_AskPauseChallenge::
@@ -174,7 +172,6 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_MavenUpNext::
 BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForMaven::
 	message BattleFrontier_BattlePalaceBattleRoom_Text_ReadyForPalaceMaven
 	waitmessage
-	call BattleFrontier_EventScript_GetCantRecordBattle
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattlePalaceBattleRoom_EventScript_AskReadyForMavenNoRecord
 	multichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE
 	switch VAR_RESULT

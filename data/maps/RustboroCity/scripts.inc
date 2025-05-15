@@ -12,10 +12,15 @@ RustboroCity_MapScripts::
 
 RustboroCity_OnTransition:
 	setflag FLAG_VISITED_RUSTBORO_CITY
+	call_if_set FLAG_IS_CHAMPION, RustboroCity_EventScript_EnableRival
 	call Common_EventScript_SetupRivalGfxId
 	call_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_HideMapNamePopup
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	goto_if_eq VAR_RUSTBORO_CITY_STATE, 6, RustboroCity_EventScript_PositionScientistForExit
+	end
+
+RustboroCity_EventScript_EnableRival::
+	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	end
 
 RustboroCity_EventScript_PositionScientistForExit::
@@ -188,6 +193,10 @@ RustboroCity_EventScript_Boy2BrineyLeftTunnel::
 
 RustboroCity_EventScript_Twin::
 	msgbox RustboroCity_Text_WowYouHavePokemon, MSGBOX_NPC
+	end
+
+RustboroCity_EventScript_SewersKid::
+	msgbox RustboroCity_Text_KidSewers, MSGBOX_NPC
 	end
 
 RustboroCity_EventScript_NinjaBoy::
@@ -1297,3 +1306,9 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_Text_KidSewers:
+	.string "Some guy in a red suit, they stole\n"
+	.string "my SHROOMISH! Last I saw they were\l"
+	.string "heading to the RUSTBORO SEWERS.\p"
+	.string "Please find them!$"

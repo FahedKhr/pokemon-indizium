@@ -22,6 +22,16 @@
       "map": "MAP_ROUTE108",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_MAUVILLE_INSIDE",
+      "offset": 27,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE135",
+      "offset": 23,
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -117,7 +127,19 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
-  "bg_events": []
+  "warp_events": [
+    {
+      "x": 21,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ECUME_CAVE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
 }

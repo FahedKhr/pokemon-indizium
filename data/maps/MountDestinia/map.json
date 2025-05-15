@@ -1,0 +1,60 @@
+{
+  "id": "MAP_MOUNT_DESTINIA",
+  "name": "MountDestinia",
+  "layout": "LAYOUT_MOUNT_DESTINIA",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ROUTE_3",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 28,
+      "y": 45,
+      "elevation": 0,
+      "dest_map": "MAP_MOUNT_DESTINIA_4",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 35,
+      "elevation": 0,
+      "var": "VAR_DESTINIA_STATE",
+      "var_value": "0",
+      "script": "DESTINIA_FINAL_BATTLE"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 35,
+      "elevation": 0,
+      "var": "VAR_DESTINIA_STATE",
+      "var_value": "0",
+      "script": "DESTINIA_FINAL_BATTLE"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 35,
+      "elevation": 0,
+      "var": "VAR_DESTINIA_STATE",
+      "var_value": "0",
+      "script": "DESTINIA_FINAL_BATTLE"
+    }
+  ],
+  "bg_events": [
+
+  ]
+}

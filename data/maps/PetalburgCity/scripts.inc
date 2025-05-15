@@ -55,7 +55,7 @@ PetalburgCity_EventScript_WallyTutorial::
 	fadedefaultbgm
 	clearflag FLAG_DONT_TRANSITION_MUSIC
 	special LoadPlayerParty
-	setvar VAR_PETALBURG_GYM_STATE, 1
+	addvar VAR_PETALBURG_GYM_STATE, 1
 	warp MAP_PETALBURG_CITY_GYM, 4, 108
 	waitstate
 	releaseall
@@ -98,6 +98,10 @@ PetalburgCity_EventScript_Boy::
 
 PetalburgCity_EventScript_WallysMom::
 	msgbox PetalburgCity_Text_WhereIsWally, MSGBOX_NPC
+	end
+
+PetalburgCity_EventScript_AquaGrunt::
+	msgbox PetalburgCity_Text_AquaGrunt, MSGBOX_NPC
 	end
 
 PetalburgCity_Movement_WalkToWallyHousePlayer:
@@ -765,3 +769,11 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
+
+PetalburgCity_Text_AquaGrunt:
+	.string "What? You wanted to go to the gym?\p"
+	.string "Well too bad for you then, I've been\n"
+	.string "given the order to stay here until\l"
+	.string "the BOSS is done.\p"
+	.string "Check that cave on Route 104 to see\n"
+	.string "if they're done.$"

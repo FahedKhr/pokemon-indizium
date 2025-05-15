@@ -599,6 +599,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE119_HOUSE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 81,
+      "elevation": 0,
+      "dest_map": "MAP_CODA_CAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -826,13 +833,6 @@
       "y": 73,
       "elevation": 3,
       "secret_base_id": "SECRET_BASE_SHRUB4_1"
-    },
-    {
-      "type": "secret_base",
-      "x": 16,
-      "y": 81,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE3_3"
     },
     {
       "type": "secret_base",

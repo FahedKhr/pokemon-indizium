@@ -29,7 +29,6 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound::
 	call BattleFrontier_BattleDomePreBattleRoom_EventScript_ReadyForNextRoundMessage
 	waitmessage
 	switch VAR_RESULT  @ No case?
-	call BattleFrontier_EventScript_GetCantRecordBattle
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRoundNoRecord
 	multichoice 16, 0, MULTI_TOURNEY_WITH_RECORD, TRUE
 	switch VAR_RESULT
@@ -61,7 +60,6 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_AskRecordBattle::
 	case MULTI_B_PRESSED, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_RecordBattle::
-	call BattleFrontier_EventScript_SaveBattle
 	goto BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
 
 BattleFrontier_BattleDomePreBattleRoom_EventScript_AskPauseChallenge::
@@ -138,7 +136,6 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	waitmessage
 	waitbuttonpress
 	fadescreen FADE_TO_BLACK
-	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle
 	special ChoosePartyForBattleFrontier

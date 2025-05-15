@@ -58,6 +58,9 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	applymovement LOCALID_ARCHIE, SlateportCity_OceanicMuseum_2F_Movement_ArchieApproachPlayer
 	waitmovement 0
 	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchieWarning, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ARCHIE_SLATEPORT, SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat
+	delay 1
+	msgbox SlateportCity_OceanicMuseum_2F_Text_ArchiePostBattle, MSGBOX_DEFAULT
 	closemessage
 	savebgm MUS_DUMMY
 	fadedefaultbgm
@@ -298,6 +301,9 @@ SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
 	.string "Awaaaah!\n"
 	.string "A kid beat me!$"
 
+SlateportCity_OceanicMuseum_2F_Text_ArchieDefeat:
+	.string "You're a tough one kiddo.$"
+
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
 	.string "Oh, man, what a disaster…\n"
 	.string "The BOSS is going to be furious…$"
@@ -339,6 +345,10 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "the expansion of the sea.\p"
 	.string "Don't you agree? What we are doing\n"
 	.string "is a magnificent undertaking.\p"
+	.string "Whatever.\n"
+	.string "I'll take care of you.$"
+
+SlateportCity_OceanicMuseum_2F_Text_ArchiePostBattle:
 	.string "Ah, fine…\n"
 	.string "You're still too young to understand\l"
 	.string "our noble objective.\p"

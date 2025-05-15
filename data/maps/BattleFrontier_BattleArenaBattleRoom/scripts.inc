@@ -142,7 +142,6 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForOpponent::
 	call_if_eq VAR_RESULT, 4, BattleFrontier_BattleArenaBattleRoom_EventScript_ReadyFor5thOpponent
 	call_if_eq VAR_RESULT, 5, BattleFrontier_BattleArenaBattleRoom_EventScript_ReadyFor6thOpponent
 	call_if_eq VAR_RESULT, 6, BattleFrontier_BattleArenaBattleRoom_EventScript_ReadyFor7thOpponent
-	call BattleFrontier_EventScript_GetCantRecordBattle
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForOpponentNoRecord
 	multichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE
 	switch VAR_RESULT
@@ -170,7 +169,6 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_AskRecordBattle::
 	case MULTI_B_PRESSED, BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForOpponent
 
 BattleFrontier_BattleArenaBattleRoom_EventScript_RecordBattle::
-	call BattleFrontier_EventScript_SaveBattle
 	goto BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForOpponent
 
 BattleFrontier_BattleArenaBattleRoom_EventScript_AskPauseChallenge::
@@ -249,8 +247,6 @@ BattleFrontier_BattleArenaBattleRoom_EventScript_TycoonUpNext::
 BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoon::
 	message BattleFrontier_BattleArenaBattleRoom_Text_PreparedForTycoon
 	waitmessage
-	call BattleFrontier_EventScript_GetCantRecordBattle
-	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleArenaBattleRoom_EventScript_AskReadyForTycoonNoRecord
 	multichoice 19, 4, MULTI_GO_ON_RECORD_REST_RETIRE, TRUE
 	switch VAR_RESULT
 	case 0, BattleFrontier_BattleArenaBattleRoom_EventScript_BattleGreta
