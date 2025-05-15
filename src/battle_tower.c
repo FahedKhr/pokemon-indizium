@@ -1659,7 +1659,7 @@ static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount)
     u16 chosenMonIndices[MAX_FRONTIER_PARTY_SIZE];
     u8 level = SetFacilityPtrsGetLevel();
     u8 fixedIV = 0;
-    u8 bfMonCount;
+    u16 bfMonCount;
     const u16 *monSet = NULL;
     u32 otID = 0;
 
@@ -3430,7 +3430,7 @@ static void FillTentTrainerParty_(u16 trainerId, u8 firstMonId, u8 monCount)
     u16 chosenMonIndices[MAX_FRONTIER_PARTY_SIZE];
     u8 level = SetTentPtrsGetLevel();
     u8 fixedIV = 0;
-    u8 bfMonCount;
+    u16 bfMonCount;
     const u16 *monSet = NULL;
     u32 otID = 0;
     u16 monId;
