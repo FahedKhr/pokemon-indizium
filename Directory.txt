@@ -1,1 +1,2 @@
-cd "/mnt/c/Users/Fahed/Desktop/Pokemon Indizium/pokeemerald-indizium"
+cd "/mnt/c/Users/Fahed/Desktop/Pokemon Indizium/pokemon-indizium"
+cd "/mnt/c/Users/Fahed EL KHARBAOUI/Documents/pokemon-indizium"
